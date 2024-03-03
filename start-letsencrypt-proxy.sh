@@ -8,5 +8,5 @@ docker run --detach \
   --volume vhost:/etc/nginx/vhost.d \
   --volume html:/usr/share/nginx/html \
   --volume /var/run/docker.sock:/tmp/docker.sock:ro \
-  --volume $(pwd)/conf/nginx-upload-size.conf:/etc/nginx/conf.d/upload.conf:ro \
+  --volume "$(pwd)"/conf/nginx-upload-size.conf:/etc/nginx/conf.d/upload.conf:ro \
   nginxproxy/nginx-proxy
