@@ -1,5 +1,8 @@
 #!/bin/bash
 
+docker kill welcome
+docker rm -f welcome
+
 docker run --detach \
   --name welcome \
   --env LETSENCRYPT_HOST=yuuk1.tk \
